@@ -1,5 +1,3 @@
-
-
 public class FactoryCreator {
     
     private static FactoryCreator instance;
@@ -18,7 +16,7 @@ public class FactoryCreator {
         String protein = ProteinFactory.getInstance().chooseProtein(dietPlan).getProtein();
         String fat = FatFactory.getInstance().chooseFats(dietPlan).getFat();
 
-        System.out.println("Meal Plan for " + name +" is : " + carb + ", " + protein + ", " + fat + ".");
+        System.out.println(dietPlan+ " meal Plan for " + name +" is : " + carb + ", " + protein + ", " + fat + ".");
  
     }
     
